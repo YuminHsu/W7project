@@ -1,0 +1,58 @@
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 a{
+    width: 128px;
+    height: 38px;
+    background-image: url(../img/d’Perfume/d’Perfume.png);
+    background-size:contain; /*將背景圖片縮小至可以在容器內呈現*/
+    background-repeat: no-repeat;
+    display: block;
+    text-indent: 101%; /*縮排語法，設定 101% 讓a連結的文字超出圖片範圍*/
+    overflow: hidden; /*再用 overflow 隱藏多出來的文字*/
+    white-space: nowrap; /*讓文字不換行 */
+    @include sm{
+        background-image: url(../img/d’Perfume/d’Perfume@2x.png);
+    }
+}
+
+.fa-layers-text{
+    font-size: 12px;
+    background-color: $primary;
+    color: $white;
+    top: 0px;
+    right: 0px;
+    padding: 0px 4px;
+}
+
+.navbarToggleExternalContent{
+    a{
+        display: block;
+    }
+}
+
+.subs{
+    background-image: url(../img/subs/photo-1532413992378-f169ac26fff0.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+    @include sm{
+        background-image: url(../img/subs/photo-1532413992378-f169ac26fff0@2x.png);
+    }
+    .row{
+        top: 312px;
+    }
+}
+
+form{
+    .input-group{
+        max-width: 350px;
+        .btn{
+            margin-left: -2px;
+            border-radius: 0 0.25rem 0.25rem 0;
+        }
+    }
+}
